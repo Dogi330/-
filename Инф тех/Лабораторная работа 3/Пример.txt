@@ -1,0 +1,153 @@
+\documentclass[a4paper, l4pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage [english, russian]{babel} 
+\usepackage [letterpaper, top=2cm, botton=2cm, left=3cm, right=3 cm, marginparwidth=1.75 cm] {geometry}
+\usepackage{mathtools}
+\title{Лабораторная работа №3}
+\author{Доктор кто}
+\date{March 2024}
+
+\begin{document}
+\maketitle
+\begin{center}
+\§§1]\quad {ПРOCTЕЙШИЕ ЗАДАЧИ}\quad47
+\end{center}
+\parФункция и $v(х, t)$, очевидно, удовлетворяет однородному уравнению
+$$
+\begin{equation}
+p\frac{b^2v}{bt^2}=\frac{b}{bx}\(k\frac{bv}{bx}
+\end{equation}
+$$
+
+\setlength{\parindent}{0cm}
+и однородным дополнительным условиям
+\setlength{\end}
+
+$$
+\begin{equation}
+\begin{equation}
+\begin{rcases}
+v(x,t)=0,\quad v(0,t)=0,\\v_t(x,0)=0,\quad v(l,t)=0,
+\end{rcases}
+\end{equation}
+\end{equation}
+$$
+
+\setlength{\parindent}{0cm}
+а также условию 1) теоремы.
+\setlength{\end}
+
+\parДокажем, что функция $v(x,t)$ тождественно равна нулю. 
+\parРассмотрим функцию
+
+$$
+\begin{equation}
+E\left(t\right)=\frac{1}{2}\int_0^l\left\{k\left(v_x\right)^2+p\left(v_t\right)^2\right\}dx
+\end{equation}
+$$
+
+и покажем, что она не зависит от $t$. Физический смысл функции $E(t)$ очевиден: это полная энергия струны в момент времени $t$. Продифференцируем $Е(t)$ по $t$, выполняя при этом дифференцирование под знаком интеграла $^1)$
+
+$$
+\frac{dE\left(t\right)}{dt}=\int_0^l\left(kv_xv_{xt}+pv_tv_{tt}\right)dx.
+$$
+
+Интегрируя по частям первое слагаемое правой части, будем иметь:
+
+$$
+\begin{equation}
+\int_0^1kv_xv_{xt}dx=\left[kv_xv_t\right]_0^l-\int_0^lv_t\left(kv_x\right)_xdx.
+\end{equation}
+$$
+Подстановка обращается в нуль в силу граничных условий $(из v(0,t)=0$ следует $v_t(0,t)=0$ и аналогично для $х=l)$. Отсюда следует, что
+$$
+\frac{de\left(t\right)}{dt}=\int_0^1\left[pv_tv_{tt}-v_t\left(kv_x\right)_x\right]dx=\int_0^1v_t\left[pv_{tt}-\left(kv_x\right)_x\right]dx=0,
+$$
+
+т.е. $Е(t) = const$. Учитывая начальные условия, получаем:
+
+$$
+\begin{equation}
+E\left(t\right)=const=E\left(0\right)=\frac{1}{2}\int_0^1\left[k\left(v_x\right)^2+p\left(v_t\right)^2\right]_{t=0}dx=0,
+\end{equation}
+$$
+\par$^1)$ для дифференцирования под знаком интеграла достаточно, чтобы получаемое при этом подынтегральное выражение было непрерывно на отрезке $0 \le  x \le l$ при $t \ge 0$. Это требование в нашем случае выполнено, так как функция $v(x, t)$  удовлетворяет условию 1) теоремы, а $р(x)$ и $k(x)$ – условия 2).
+\begin{center}
+48\quad{PABHEНИЯ ГИПЕРБОЛИЧЕСКОГО ТИПА}\quad[ГЛ. II]\\ 
+\end{center}
+так как
+$$
+v\left(x,0\right)=0,\quad v_t\left(x,0\right)=0.
+$$
+
+Пользуясь формулой (81) и положительностью $k$ и $p$, заключаем, что
+
+$$
+v_x\left(x,t\right)\equiv 0,\quad v_t\left(x,t\right)\equiv0,
+$$
+
+откуда и следует тождество
+
+$$
+\begin{equation}
+v\left(x,t\right)=const=C_0.
+\end{equation}
+$$
+
+Пользуясь начальным $м$ условием, находим:
+
+$$
+v\left(x,0\right)=C_0=0;
+$$
+
+тем самым доказано, что
+
+$$
+\begin{equation}
+v\left(x,t\right)=0.
+\end{equation}
+$$
+
+Следовательно, если существуют две функции $u_1(х,t)$ и $u_2(х,t)$, удовлетворяющие всем условиям теоремы, то $u_1(х,t) = u_2(х,t)$. 
+\parДля второй краевой задачи функция $v = u_1 – u_2$ удовлетворяет граничным условиям
+
+$$
+\begin{equation}
+v_x\left(0,t\right)=0,\quad v_x\left(l,t\right)=0,
+\end{equation}
+$$
+
+и подстановка в формуле (80) также обращается в нуль. Дальнейшая часть доказательства теоремы остается без изменений. 
+\parДля третьей краевой задачи доказательство требует некоторого видоизменения. Рассматривая по-прежнему два решение $u_1$ и $u_2$, получаем для их разности $v(x, t) = u_1 – u_2$ уравнение (77) и граничные условия
+
+$$
+\begin{equation}
+\begin{equation}
+\begin{rcases}
+v_x(0,t)-h_1v(0,t)=0\quad (h_1\geq 0),\\
+v_x(l,t)+h_2v(l,t)=0\quad(h_2\geq 0).
+\end{rcases}
+\end{equation}
+\end{equation}
+$$
+
+Представим подстановку в (80) в виде
+
+$$
+[kv_xu_t]_{0}^{l}=-\frac{k}{2}\frac{b}{bt}[h_2v^{2}(l, t)+h_1v^{2}(0,t)].
+$$
+
+Интегрируя  $dE/dt$ в пределах от нуля до $t$, получим:
+
+$$
+E(t)-E(0)=\int_{0}^{t}\int_{0}^{l}v_t[pv_{tt}-(kv_x)_x]dxdt -\frac{k}{2}{h_2[v^{2}(l,t)-v^{2}(l,0)+h_1[v^{2}(0, t)-v^{2}(0,0)]},
+$$
+
+откуда в силу уравнения и начальных условий следует:
+
+$$
+\begin{equation}
+E\left(t\right)=-\frac{k}{2}\left[h_2v^2\left(l,t\right)\\+h_1v^2\left(0,t\right)\right]\le0.
+\end{equation}
+$$
+\end{document}

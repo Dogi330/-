@@ -1,0 +1,96 @@
+\documentclass[pdf,hyperref={unicode}, aspectratio=43, serif,11pt]{beamer}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}  
+\usepackage{listings}
+\usepackage{subcaption}
+
+%Красная строка в первом абзаце
+\usepackage{indentfirst}
+%Величина отступа красной строки
+\setlength{\parindent}{12.5 mm}
+
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\setstretch{1}
+
+\usetheme{Madrid}
+\usecolortheme
+
+\title[Физико-математический факультет]{История факультета}
+\author{Е.Е. Титов}
+\date{22 апреля 2024}
+\institute[]{Орловский государственный
+университет имени И.\,С.~Тургенева}
+\def\baselinestretch{1}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Первые выпускники}
+\begin{center}
+    \includegraphics[scale=0.6]{1.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{В годы Великой Отечественной войны}
+\begin{center}
+    \includegraphics[scale=0.7]{2.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Новое здание педагогического института}
+\begin{center}
+    \includegraphics[scale=0.3]{3.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Преобразование Орловского государственного педагогического института}
+\begin{figure}
+\centering
+\begin{subfigure}{\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{4.jpg}
+  \caption{Байдак Геннадий Васильевич (1983 - 2003)}
+\end{subfigure}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Спортивные традиции физико-математического факультета}
+\begin{center}
+    \includegraphics[scale=0.5]{5.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Деканы факультета}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+1934 - 1938& Поподько Трофим Ильич \\ \hline
+1939 - 1941& Еремин Петр Дорофеевич\\ \hline
+1941 - 1947 &Клименко Сергей Митрофанович\\ \hline
+1947 - 1948& Александров Василий Александрович\\ \hline
+1948 - 1953& Горшенин Святослав Михайлович\\ \hline
+1953 - 1957& Алексеев Алексей Петрович\\ \hline
+1957 - 1964& Александров Василий Александрович\\ \hline
+1964 - 1969& Курбан Дмитрий Григорьевич\\ \hline
+1969 - 1974& Иножарский Вениамин Константинович\\ \hline
+1974 - 1982& Курбан Дмитрий Григорьевич\\ \hline
+1983 - 2003& Байдак Геннадий Васильевич\\ \hline
+2003 - н.в &Можарова Татьяна Николаевна\\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\end{document}
